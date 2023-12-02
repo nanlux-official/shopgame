@@ -1,0 +1,1074 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(https://i.pinimg.com/originals/87/92/34/8792345260cc4e9565cf6114db0f0b32.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: yellow;
+}
+.hover:hover{
+    color: red;
+} 
+/* MENU */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: black;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000000;
+}
+header .logo{
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    margin-top: 5px;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Roboto" sans-serif;
+}
+header form{
+    line-height: 80px;
+    float: right;
+    margin-left: 10px;
+}
+header nav ul li a{
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: #fff;
+    background: red;
+}
+.menu-toggle{
+    color: #fff;
+    float: left;
+    line-height: 80px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 992px){
+header{
+    padding:  0 20px;
+}
+.menu-toggle{
+    display: block;
+    margin-left: -275px;
+}
+header img{
+    margin: 13px 80px 5px 40px;
+    width: 160px;
+    height: 50px;
+}
+header nav{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: black;
+    height: 323px;
+    top: 80px;
+    left: -100%;
+}
+header nav.active{
+    left: 0;
+}
+header nav ul{
+    display: block;
+    text-align: center;
+}
+header nav ul li a{
+    border-bottom: 1px solid #fff;
+}
+header form{
+    margin-right: -11px;
+    display: block;
+}
+header form[action="signup.html"]{
+    display: none;
+}
+header input[type="submit"]{
+    padding: 7px 5px 7px 5px;
+    border-radius: 10px;
+    text-transform: initial;
+    font-size: 15px;
+}
+}
+@media only screen and (max-width: 455px){
+header{
+    padding:  0 20px;
+}
+.menu-toggle{
+    display: block;
+    margin-left: 10px;
+    margin-top: -85px;
+}
+header img{
+    margin: 13px 130px 5px 45px;
+    width: 160px;
+    height: 50px;
+}
+header nav{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: black;
+    height: 323px;
+    top: 80px;
+    left: -100%;
+}
+header nav.active{
+    left: 0;
+}
+header nav ul{
+    display: block;
+    text-align: center;
+}
+header nav ul li a{
+    border-bottom: 1px solid #fff;
+}
+header form{
+    margin-right: -13px;
+    float: right;
+    margin-top: -85px;
+}
+header form[action="signup.html"]{
+    display: none;
+}
+header input[type="submit"]{
+    padding: 7px 5px 7px 5px;
+    border-radius: 10px;
+    text-transform: initial;
+    font-size: 15px;
+}
+}
+/* SUBMIT AND TEXT */
+input[type="submit"]{
+    padding: 8px ;
+    font-size: 15px; 
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: linear-gradient(4deg, orange, yellow);
+    color: black;
+    cursor: pointer;
+}
+input[type="text"]{ 
+    width: 331px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: yellow;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    letter-spacing: 1px;
+    background: #1f2228;
+}
+/* NẠP THẺ */
+.lable{
+    background-image: url(https://sykeoshop.com/assets/frontend/home/images/bg-top.png);
+    background-repeat: repeat;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pagebody{
+    background: #1d1d1d; 
+    padding: 0px 5px 0px 5px;
+    margin: 100px 70px 20px 70px;
+    border: #363636 5px solid;
+}
+.pagebody ul {
+    list-style-type: none;
+    margin-top: 43px;
+}
+.pagebody ul li{
+    font-size: 22px;
+    margin-top: -17px;
+    margin-left: 9px;
+}
+.modal-button{
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+.modal-button button{
+    font-size: 20px;
+    font-weight: bold;
+    color: #C2C2C2;
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin-top: -30px;
+    margin-left: -5px;
+}
+#tablinks1{
+    padding: 19px 34.9px 19px 34.9px;
+}
+#tablinks2{
+    padding: 19px 20px 19px 15px;
+}
+.tabcontent{
+    display: none;
+}
+.tablinks{
+    background-color: #474747;
+}
+.tablinks.active{
+    background-color: #1d1d1d ;
+}
+.tablinks:hover{
+    color: #FFCB03;
+    cursor: pointer;
+}
+.tabcontent ul{
+    margin-top: 24.5px;
+    margin-bottom: 24.5px;
+}
+.tabcontent ul li{
+    padding: 5px;
+    margin-top: 15.5px;
+    margin-left: 30px;
+}
+.tabcontent ul label{
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 85px;
+    background-color: #FF502E;
+    color: black;
+    padding: 4px 15px 4px 15px;
+    border-radius: 5px;
+}
+.tabcontent ul label sup{
+    text-transform: none;
+}
+.pagebody ul li img{
+    float: right;
+    margin-top: -22.7px;
+    margin-bottom: 20px;
+    margin-right: -4.6px;
+    border-left: 5px solid #363636;
+}
+.pagebody select{
+    width: 352.5px;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    margin-left: 33px;
+    background: #1f2228;
+    border: 1px #fff solid;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 7px;
+}
+.pagebody input[type="text"]{
+    margin-top: 20px;
+    margin-left: 33px;
+    border: 1px #fff solid;
+}
+.pagebody input[type="submit"]{
+    margin-top: 20px;
+    margin-left: 33px;
+    font-size: 15px;
+    border-radius: 0px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px #fff solid;
+    width: 352px;
+    color: black;
+    background: linear-gradient(4deg, yellow, orange);
+}
+@media only screen and (max-width: 1280px){
+.pagebody ul li img{
+    width: 668px;
+    height: 390px;
+}
+.pagebody ul li{
+    text-align: center;
+}
+.pagebody select{
+    width: 35.5%;
+    font-size: 18px;
+}
+.pagebody input[type="text"]{
+    width: 33.3%;
+    font-size: 18px;
+}
+.pagebody input[type="submit"]{
+    width: 35.5%;
+    margin-top: 20px;
+}
+}
+@media only screen and (max-width: 800px){
+.pagebody{
+    background: #1f2228;
+    margin-right: auto;
+    margin-left: auto;
+    border: #343434 5px solid;
+    margin-top: 80px;
+}
+.pagebody ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+.pagebody ul li{
+    margin-top: 100px;
+    text-align: center;
+}
+.pagebody ul li a{
+    text-decoration: none;
+    font-size: 32px;
+}
+.pagebody ul li img{
+    margin-left: -28px;
+    margin-top: -120px;
+    width: 790px;
+    height: 300px;   
+}
+.pagebody select{
+    width: 102.5%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: -8px;
+}
+.pagebody input[type="text"]{
+    margin-top: 20px;
+    margin-left: -8px;
+    font-size: 20px;
+    width: 99.3%;
+}
+.pagebody input[type="submit"]{
+    width: 103%;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+}
+@media only screen and (max-width: 768px){
+.lable{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pagebody{
+    margin: 100px 30px 20px;
+}
+.pagebody ul li img{
+    margin-right: -3.5px;
+    width: 695px;
+    height: 320px;
+}
+.pagebody ul li a{
+    font-size: 39px;
+}
+.pagebody select{
+    font-size: 22px;
+    width: 95%;
+    margin-left: 17px;
+}
+.pagebody input[type="text"]{
+    width: 92%;
+    font-size: 22px;
+    margin-left: 17px;
+}
+.pagebody input[type="submit"]{
+    width: 95%;
+    margin-left: 17px;
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 600px){
+.lable{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pagebody{
+    margin: 100px 30px 20px;
+}
+.pagebody ul li img{
+    margin-left: 5px;
+    width: 528px;
+    height: 220px;
+}
+.pagebody ul li a{
+    font-size: 39px;
+}
+.pagebody select{
+    font-size: 22px;
+    width: 95%;
+    margin-left: 13px;
+}
+.pagebody input[type="text"]{
+    width: 90.8%;
+    font-size: 22px;
+    margin-left: 13px;
+}
+.pagebody input[type="submit"]{
+    width: 95%;
+    margin-left: 13px;
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 414px){
+.lable{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pagebody{
+    margin: 100px 30px 20px;
+}
+.pagebody ul li img{
+    margin-right: -5px;
+    width: 344px;
+    height: 180px;
+}
+.pagebody ul li a{
+    font-size: 39px;
+}
+.pagebody select{
+    font-size: 15.5px;
+    width: 95%;
+    margin-left: 8px;
+}
+.pagebody input[type="text"]{
+    width: 88.3%;
+    font-size: 15.5px;
+    margin-left: 8px;
+}
+.pagebody input[type="submit"]{
+    width: 95%;
+    margin-left: 8px;
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 375px){
+.lable{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pagebody{
+    margin: 100px 30px 20px;
+}
+.pagebody ul li img{
+    margin-right: -5px;
+    width: 304px;
+    height: 180px;
+}
+.pagebody ul li a{
+    font-size: 39px;
+}
+.pagebody select{
+    font-size: 13px;
+    width: 95%;
+    margin-left: 8px;
+}
+.pagebody input[type="text"]{
+    width: 87.5%;
+    font-size: 13px;
+    margin-left: 8px;
+}
+.pagebody input[type="submit"]{
+    width: 95%;
+    margin-left: 8px;
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 360px){
+.lable{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pagebody{
+    margin: 100px 30px 20px;
+}
+.pagebody ul li img{
+    margin-right: -5px;
+    width: 290px;
+    height: 160px;
+}
+.pagebody ul li a{
+    font-size: 39px;
+}
+.pagebody select{
+    font-size: 13px;
+    width: 95%;
+    margin-left: 8px;
+}
+.pagebody input[type="text"]{
+    width: 87%;
+    font-size: 13px;
+    margin-left: 8px;
+}
+.pagebody input[type="submit"]{
+    width: 95%;
+    margin-left: 8px;
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 320px){
+.lable{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 320px;
+}
+.pagebody{
+    margin: 100px 15px 20px;
+}
+.pagebody ul li img{
+    margin-right: -5px;
+    width: 280px;
+    height: 134.48px;
+}
+.pagebody ul li a{
+    font-size: 39px;
+}
+.pagebody select{
+    font-size: 13px;
+    width: 95%;
+    margin-left: 8px;
+}
+.pagebody input[type="text"]{
+    width: 86.9%;
+    font-size: 13px;
+    margin-left: 8px;
+}
+.pagebody input[type="submit"]{
+    width: 95%;
+    margin-left: 8px;
+    font-size: 20px;
+}
+}
+/* CONTACT */
+.contact{
+    background-color: #333;
+    color: yellow;
+    margin: 50px 0 0 0;
+    padding: 30px 0 30px 50px;
+    line-height: 23px;
+    text-align: justify;
+}
+.contact p{
+    margin-top: 20px;
+}
+.admin{
+    margin: -177px 0 50px 450px;
+    color: #fff; 
+}
+.support{
+    float: right;
+    margin: -158px 55px 0px 0px; 
+}
+.table{
+    background-color: rgb(27, 26, 26);
+    padding: 10px;
+    color: #8a8a8a;
+    text-align: center;
+    margin-bottom: 0;
+}
+.link{
+    margin-right: 0px;
+    padding-top: 10px;
+}
+.image{
+    margin-left: 430px;
+    margin-top: -200px;
+}
+@media only screen and (max-width: 768px){
+.start{
+    width: 95.3%;
+    margin-left: 20px;
+}
+.contact p{
+    line-height: 35px; 
+    margin-left: 65px;
+}
+.contact{
+    font-size: 25px;
+    color: yellow;
+    margin-left: -35px;
+    width: 100%;
+    text-align: justify;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.admin{
+    margin-left: 4px;
+    margin-top: 20px;
+}
+.support{
+    margin-top: -20px;
+    margin-right: 230px;
+    padding-bottom: 20px;
+}
+.link{
+    margin-top: 380px;
+}
+.link a[href="https://www.facebook.com/shopnamgamer/"]{
+    margin-left: 100px; 
+}
+.image{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: -20px;
+}
+.image img{
+    width: 400px;
+    height: 150px;  
+}
+.table{
+    font-size: 30px;
+}
+}
+@media only screen and (max-width: 600px){
+.start{
+    width: 94.2%;
+    margin-left: 20px;
+}
+.contact p{
+    line-height: 30px;
+    margin-left: 40px; 
+}
+.contact{
+    font-size: 20px;
+    color: yellow;
+    margin-left: -35px;
+    width: 100%;
+    text-align: justify;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.admin{
+    margin-left: 4px;
+    margin-top: 20px;
+}
+.support{
+    margin-top: -20px;
+    margin-right: 143px;
+    padding-bottom: 20px;
+}
+.link{
+    margin-top: 380px;
+}
+.link a[href="https://www.facebook.com/shopnamgamer/"]{
+    margin-left: 50px; 
+}
+.image{
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.image img{
+    width: 400px;
+    height: 150px;  
+}
+.table{
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 414px){
+.start{
+    width: 91.5%;
+    margin-left: 20px;
+}
+.contact p{
+    margin-left: 5px;
+}
+.contact{
+    font-size: 15px;
+    color: yellow;
+    margin-left: -35px;
+    width: 100%;
+    text-align: justify;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.admin{
+    margin-left: 4px;
+    margin-top: 20px;
+}
+.support{
+    margin-top: -20px;
+    margin-right: 45px;
+    padding-bottom: 20px;
+}
+.link{
+    margin-top: 380px;
+}
+.link a[href="https://www.facebook.com/shopnamgamer/"]{
+    margin-left: 0px; 
+}
+.image{
+    margin-top: 20px;
+    margin-left: 24px;
+}
+.image img{
+    width: 300px;
+    height: 100px;  
+}
+.table{
+    font-size: 15px;
+}
+}
+@media only screen and (max-width: 375px){
+.start{
+    width: 94.6%;
+    margin-left: 20px;
+}
+.contact p{
+    margin-left: 0px;
+}
+.contact{
+    font-size: 15px;
+    color: yellow;
+    margin-left: -50px;
+    width: 100%;
+    text-align: justify;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.admin{
+    margin-left: 4px;
+    margin-top: 20px;
+}
+.support{
+    margin-top: -20px;
+    margin-right: 28px;
+    padding-bottom: 20px;
+}
+.link{
+    margin-top: 140px;
+}
+.link a[href="https://www.facebook.com/shopnamgamer/"]{
+    margin-left: 0px; 
+}
+.image{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: -20px;
+}
+.image img{
+    width: 300px;
+    height: 100px;  
+}
+.table{
+    font-size: 15px;
+}
+}
+@media only screen and (max-width: 360px){
+.start{
+    width: 94.4%;
+    margin-left: 20px;
+}
+.contact{
+    font-size: 14px;
+    color: yellow;
+    margin-left: -50px;
+    width: 100%;
+    text-align: justify;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.admin{
+    margin-left: 4px;
+    margin-top: 20px;
+}
+.support{
+    margin-top: -20px;
+    margin-right: 21px;
+    padding-bottom: 20px;
+}
+.link{
+    margin-top: 140px;
+}
+.link a[href="https://www.facebook.com/shopnamgamer/"]{
+    margin-left: 0px; 
+}
+.image{
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-bottom: -20px;
+}
+.image img{
+    width: 300px;
+    height: 100px;  
+}
+.table{
+    font-size: 15px;
+}
+}
+@media only screen and (max-width: 320px){
+.start{
+    width: 93.6%;
+    margin-left: 20px;
+}
+.contact p{
+    margin-left: -4px;
+}
+.contact{
+    font-size: 13px;
+    color: yellow;
+    margin-left: -50px;
+    width: 100%;
+    text-align: justify;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.admin{
+    margin-left: 4px;
+    margin-top: 20px;
+}
+.support{
+    margin-top: -20px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+}
+.link{
+    margin-top: 140px;
+}
+.link a[href="https://www.facebook.com/shopnamgamer/"]{
+    margin-left: -15px; 
+}
+.image{
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: -20px;
+}
+.image img{
+    width: 300px;
+    height: 100px;  
+}
+.table{
+    font-size: 13px;
+}
+}
+/* SELL ACC */
+.sell{
+    background-color: #000000e3;
+    margin: 50px 60px 50px 60px;
+    padding: 20px 20px 35px 20px;
+    color: #000;
+}
+.tieude{
+    text-align: center;
+}
+.tieude img{
+    margin-left: -22.5px;
+    width: 500px;
+}
+#tieude1{
+    margin-left: 27px;
+}
+.buy{
+    background-color: #fff;
+    border: 2px rgb(206, 206, 206) solid;
+    width: 285px;
+    height: 350px;
+    display: inline-table;
+    margin: 20px 40px 10px 4px;
+    text-align: center;
+    text-transform: initial;
+    font-size: 15px;
+}
+.buy p{
+    padding-top: 15px;
+
+} 
+.buy input{
+    margin-bottom: 15px;
+}
+@media only screen and (max-width: 768px){
+.sell{
+    width: 94.8%;
+    margin-left: 0px;
+}
+.tieude img{
+    width: 445px;
+    height: 60px;
+    margin-left: -5px;
+}
+.buy font{
+    font-size: 20px;
+}
+.buy{
+    font-size: 18px;
+    margin-left: 3px;
+    margin-top: 18px;
+}
+.buy font[color="red"]{
+    font-size: 18px;
+}
+.buy img{
+    width: 353px;
+    height: 200px;
+}
+}
+@media only screen and (max-width: 600px){
+.sell{
+    width: 93.3%;
+    margin-left: 0px;
+}
+.tieude img{
+    width: 445px;
+    height: 60px;
+    margin-right: -5px;
+}
+.buy font{
+    font-size: 16.5px;
+}
+.buy{
+    font-size: 18px;
+    margin-left: 2.5px;
+    width: 270px;
+    height: 350px;
+    margin-top: 18px;
+}
+.buy font[color="red"]{
+    font-size: 18px;
+}
+.buy img{
+    width: 270px;
+    height: 150px;
+}
+}
+@media only screen and (max-width: 414px){
+.sell{
+    width: 90.4%;
+    margin-left: 0px;
+}
+.tieude img{
+    width: 345px;
+    height: 40px;
+    margin-left: -7px;
+}
+.buy font{
+    font-size: 12px;
+}
+.buy{
+    font-size: 18px;
+    margin-left: 0.5px;
+    width: 180px;
+    height: 305px;
+    margin-top: 15.5px;
+}
+.buy font[color="red"]{
+    font-size: 18px;
+}
+.buy img{
+    width: 180px;
+    height: 111px;
+}
+}
+@media only screen and (max-width: 375px){
+.sell{
+    width: 89.4%;
+    margin-left: 0px;
+}
+.tieude img{
+    width: 345px;
+    height: 40px;
+    margin-left: -8px;
+}
+#tieude1{
+    margin-left: 0px;
+}
+.buy font{
+    font-size: 9.5px;
+}
+.buy{
+    font-size: 18px;
+    margin-left: -1px;
+    width: 162px;
+    height: 300px;
+    margin-top: 14px;
+}
+.buy font[color="red"]{
+    font-size: 18px;
+}
+.buy img{
+    width: 162px;
+    height: 99.5px;
+}
+}
+@media only screen and (max-width: 360px){
+.sell{
+    width: 88.8%;
+    margin-left: 0px;
+}
+.tieude img{
+    width: 345px;
+    height: 40px;
+    margin-left: -13px;
+}
+.buy font{
+    font-size: 18px;
+}
+.buy{
+    font-size: 18px;
+    margin-left: -7px;
+    width: 330px;
+    height: 344.3px;
+    margin-top: 23px;
+}
+.buy font[color="red"]{
+    font-size: 18px;
+}
+.buy img{
+    width: 328px;
+    height: 197.3px;
+}
+}
+@media only screen and (max-width: 320px){
+.sell{
+    width: 87.5%;
+    margin-left: 0px;
+}
+.tieude img{
+    width: 300px;
+    height: 40px;
+    margin-left: -10px;
+}
+.buy font{
+    font-size: 18px;
+}
+.buy{
+    font-size: 18px;
+    margin-left: -7px;
+    width: 289px;
+    height: 344.3px;
+    margin-top: 23px;
+}
+.buy font[color="red"]{
+    font-size: 18px;
+}
+.buy img{
+    width: 289px;
+    height: 173.23px;
+}
+}

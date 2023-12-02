@@ -1,0 +1,321 @@
+a{
+    text-decoration: none;
+    color: rgb(217, 255, 0);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(https://topchiase24h.com/wp-content/uploads/2019/03/hinh-nen-tuong-Ahri-trong-lien-minh-huyen-thoai-33.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hover:hover{
+    color: red;
+}
+/* MENU */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: black;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000000;
+}
+header .logo{
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    margin-top: 5px;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Roboto" sans-serif;
+}
+header form{
+    line-height: 80px;
+    float: right;
+    margin-left: 10px;
+}
+header nav ul li a{
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: #fff;
+    background: red;
+}
+.menu-toggle{
+    color: #fff;
+    float: left;
+    line-height: 80px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 992px){
+header{
+    padding:  0 20px;
+}
+.menu-toggle{
+    display: block;
+    margin-left: -275px;
+}
+header img{
+    margin: 13px 80px 5px 40px;
+    width: 160px;
+    height: 50px;
+}
+header nav{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: black;
+    height: 323px;
+    top: 80px;
+    left: -100%;
+}
+header nav.active{
+    left: 0;
+}
+header nav ul{
+    display: block;
+    text-align: center;
+}
+header nav ul li a{
+    border-bottom: 1px solid #fff;
+}
+header form{
+    margin-right: -11px;
+    display: block;
+}
+header form[action="signup.html"]{
+    display: none;
+}
+header input[type="submit"]{
+    padding: 7px 5px 7px 5px;
+    border-radius: 10px;
+    text-transform: initial;
+    font-size: 15px;
+}
+}
+@media only screen and (max-width: 455px){
+header{
+    padding:  0 20px;
+}
+.menu-toggle{
+    display: block;
+    margin-left: 10px;
+    margin-top: -85px;
+}
+header img{
+    margin: 13px 130px 5px 45px;
+    width: 160px;
+    height: 50px;
+}
+header nav{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: black;
+    height: 323px;
+    top: 80px;
+    left: -100%;
+}
+header nav.active{
+    left: 0;
+}
+header nav ul{
+    display: block;
+    text-align: center;
+}
+header nav ul li a{
+    border-bottom: 1px solid #fff;
+}
+header form{
+    margin-right: -13px;
+    float: right;
+    margin-top: -85px;
+}
+header form[action="signup.html"]{
+    display: none;
+}
+header input[type="submit"]{
+    padding: 7px 5px 7px 5px;
+    border-radius: 10px;
+    text-transform: initial;
+    font-size: 15px;
+}
+}
+/* SUBMIT AND TEXT */
+input[type="submit"]{
+    padding: 8px ;
+    font-size: 15px; 
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: linear-gradient(4deg, orange, yellow);
+    color: black;
+    cursor: pointer;
+}
+input[type="text"]{ 
+    width: 332.5px;
+    padding: 10px;
+    outline: outset;
+    font-size: 15px;
+    font-weight: bold;
+    color: yellow;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: #1f2228;
+}
+/* SIGN UP */
+.container{
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 450px;
+    min-height: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
+}
+.container:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+.container:after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg,#fffb0091,#ff76009e);
+    pointer-events: none;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+0%{
+    filter: blur(0px) hue-rotate(0deg);
+}
+100%{
+    filter: blur(0px) hue-rotate(360deg);
+}
+}
+.form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.form h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+.form .inputBox{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+.form .inputBox i{
+    color: #fff;
+    position: absolute;
+    left: 5px;
+    font-size: 19px;
+    bottom: 10px;
+}
+.form .dieukhoandichvu{
+    margin-top: 20px;
+    color: #fff;
+}
+.form .inputBox input[type="email"], input[type="password"], input[type="text"] {
+    width: 90%;
+    padding-left: 35px;
+    padding-bottom: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #fff;
+}
+::placeholder{
+    color: #eee;
+}
+.form .inputBox input[type="submit"]{
+    background: linear-gradient(45deg,#fffb00,#ff5100);
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.login{
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+}
+@media only screen and (max-width: 414px){
+.container{
+    width: 404px;
+}
+}
+@media only screen and (max-width: 375px){
+.container{
+    width: 365px;
+}
+}
+@media only screen and (max-width: 360px){
+.container{
+    width: 350px;
+}
+}
+@media only screen and (max-width: 320px){
+.container{
+    width: 310px;
+}
+}
